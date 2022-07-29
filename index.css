@@ -3,7 +3,9 @@
   font-weight: 1000;
   box-sizing: border-box;
 }
-
+main {
+  margin-top: 13vh;
+}
 .principalContainer {
   display: grid;
   width: 460px;
@@ -22,17 +24,16 @@
   grid-column: 1/4;
 }
 .button-x {
-  border: 2px solid white transparent;
-  border-radius: 50px;
   align-self: end;
   margin-right: 10px;
-  transform: scale(1.6);
+  font-size: 25px;
+  border: none;
+  color: #4e484bd7;
+  transition: transform 0.1s;
 }
-.button-x:hover {
-  background-color: #ff0099;
-  border: 2px solid #464646;
-
-  box-shadow: 0px 0px 2px#280419;
+.button-x:active {
+  transform: rotate(360deg);
+  color: black;
 }
 
 .question {
